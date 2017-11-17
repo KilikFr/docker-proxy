@@ -1,0 +1,11 @@
+version: "3"
+services:
+  nginx-proxy:
+    build: docker/nginx
+    restart: unless-stopped
+    network_mode: host
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./sites-enabled:/etc/nginx/sites-enabled
