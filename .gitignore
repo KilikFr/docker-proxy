@@ -1,2 +1,2 @@
-/sites-enabled/*
-!/sites-enabled/.gitkeep
+/data/*
+/.env
