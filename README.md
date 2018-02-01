@@ -7,8 +7,8 @@ With LETSENCRYPT_HOST and LETSENCRYPT_EMAIL setup it try to generate and renew c
 
 ```sh
 cd ~/docker
-git clone git@github.com:KilikFr/docker-proxy.git
-cd docker-proxy
+git clone https://github.com/KilikFr/docker-proxy.git proxy
+cd proxy
 cp .env.dist .env
 ```
 
